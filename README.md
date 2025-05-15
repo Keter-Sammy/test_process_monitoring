@@ -13,7 +13,7 @@ This repository provides a Bash script and systemd timer for monitoring the test
 
 - sudo access
 
-**Installation Steps:**
+_**Installation Steps:**_
 
 
 **1. Clone the Repository;**
