@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#!/bin/bash
-
 # Configuration
 PROCESS_NAME="test"
 LOG_FILE="/var/log/monitoring.log"
