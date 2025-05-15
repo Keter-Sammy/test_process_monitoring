@@ -30,3 +30,12 @@ if [ -n "$CURRENT_PID" ]; then
 
     # Save the current PID for future comparison
     echo "$CURRENT_PID" > "$PID_FILE"
+
+
+      # Attempt to "knock" via HTTPS
+    curl -fsS --max-time 10 "$MONITORING_URL" > /dev/null
+    if [ $? -ne 0 ]; then
+        echo "$(date '+%Y-%m-%d %H:%M:%S') - Monitoring server unavailable at $MONITORING_URL" >> "$LOG_FILE"
+    fi
+fi
+
